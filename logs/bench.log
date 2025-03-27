@@ -1,0 +1,253 @@
+2025-03-20 08:37:09,441 DEBUG cd frappe-bench && python3 -m venv env
+2025-03-20 08:37:15,966 DEBUG cd frappe-bench && /home/mmduncan/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2025-03-20 08:37:27,274 DEBUG cd frappe-bench && /home/mmduncan/frappe-bench/env/bin/python -m pip install --quiet wheel
+2025-03-20 08:37:30,111 LOG Getting frappe
+2025-03-20 08:37:30,111 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2025-03-20 08:37:48,178 LOG Installing frappe
+2025-03-20 08:37:48,178 DEBUG cd /home/mmduncan/frappe-bench && /home/mmduncan/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mmduncan/frappe-bench/apps/frappe 
+2025-03-20 08:42:47,943 DEBUG cd /home/mmduncan/frappe-bench/apps/frappe && yarn install --check-files
+2025-03-20 08:45:23,705 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-03-20 08:45:23,725 DEBUG cd frappe-bench && bench build
+2025-03-20 08:45:24,720 INFO /usr/local/bin/bench build
+2025-03-20 08:46:08,211 LOG setting up backups
+2025-03-20 08:46:08,470 LOG backups were set up
+2025-03-20 08:46:08,470 INFO Bench frappe-bench initialized
+2025-03-20 08:47:00,117 INFO /usr/local/bin/bench new-site mysite.com
+2025-03-20 08:47:35,639 INFO /usr/local/bin/bench new-site mysite.com
+2025-03-20 08:48:28,034 INFO /usr/local/bin/bench new-site mysite.com
+2025-03-20 08:55:54,839 INFO /usr/local/bin/bench new-site mysite.com
+2025-03-20 09:05:46,681 INFO /usr/local/bin/bench new-site mysite.com
+2025-03-20 09:08:34,504 INFO /usr/local/bin/bench get-app payments
+2025-03-20 09:08:36,121 LOG Getting payments
+2025-03-20 09:08:36,122 DEBUG cd ./apps && git clone https://github.com/frappe/payments.git  --depth 1 --origin upstream
+2025-03-20 09:08:38,522 LOG Installing payments
+2025-03-20 09:08:38,522 DEBUG cd /home/mmduncan/frappe-bench && /home/mmduncan/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mmduncan/frappe-bench/apps/payments 
+2025-03-20 09:09:01,315 DEBUG bench build --app payments
+2025-03-20 09:09:01,724 INFO /usr/local/bin/bench build --app payments
+2025-03-20 09:09:11,310 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-03-20 09:09:37,368 INFO /usr/local/bin/bench get-app erpnext
+2025-03-20 09:09:38,348 LOG Getting erpnext
+2025-03-20 09:09:38,348 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2025-03-20 09:09:52,324 LOG Installing erpnext
+2025-03-20 09:09:52,324 DEBUG cd /home/mmduncan/frappe-bench && /home/mmduncan/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mmduncan/frappe-bench/apps/erpnext 
+2025-03-20 09:11:06,923 DEBUG cd /home/mmduncan/frappe-bench/apps/erpnext && yarn install --check-files
+2025-03-20 09:11:08,847 DEBUG bench build --app erpnext
+2025-03-20 09:11:09,241 INFO /usr/local/bin/bench build --app erpnext
+2025-03-20 09:11:28,270 WARNING restart failed: Couldn't find supervisorctl in PATH
+2025-03-20 09:11:53,639 INFO /usr/local/bin/bench get-app hrms
+2025-03-20 09:11:55,079 LOG Getting hrms
+2025-03-20 09:11:55,080 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2025-03-20 09:12:08,608 LOG Installing hrms
+2025-03-20 09:12:08,608 DEBUG cd /home/mmduncan/frappe-bench && /home/mmduncan/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mmduncan/frappe-bench/apps/hrms 
+2025-03-20 09:12:12,042 DEBUG cd /home/mmduncan/frappe-bench/apps/hrms && yarn install --check-files
+2025-03-20 09:16:33,767 INFO /usr/local/bin/bench --site mysite.com install-app erpnext
+2025-03-20 09:18:04,299 DEBUG bench build --app hrms
+2025-03-20 09:18:06,083 INFO /usr/local/bin/bench build --app hrms
+2025-03-20 09:24:57,547 DEBUG cd /home/mmduncan/frappe-bench && supervisorctl restart frappe:
+2025-03-20 09:24:58,208 WARNING cd /home/mmduncan/frappe-bench && supervisorctl restart frappe: executed with exit code 7
+2025-03-20 09:24:58,208 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-03-20 09:28:36,906 INFO /usr/local/bin/bench --site mysite.com install-app erpnext
+2025-03-20 09:29:08,708 INFO /usr/local/bin/bench --site mysite.com enable-scheduler
+2025-03-20 09:29:37,727 INFO /usr/local/bin/bench --site mysite.com set-maintenance-mode off
+2025-03-20 09:29:58,511 INFO /usr/local/bin/bench setup production mmduncan
+2025-03-20 09:29:58,632 DEBUG sudo /usr/bin/python3 -m pip install ansible
+2025-03-20 09:30:00,686 WARNING sudo /usr/bin/python3 -m pip install ansible executed with exit code 1
+2025-03-20 09:30:00,687 WARNING /usr/local/bin/bench setup production mmduncan executed with exit code 1
+2025-03-20 09:32:54,852 INFO /usr/local/bin/bench setup production mmduncan
+2025-03-20 09:32:54,860 DEBUG bench setup role fail2ban
+2025-03-20 09:32:55,054 INFO /usr/local/bin/bench setup role fail2ban
+2025-03-20 09:33:02,936 WARNING /usr/local/bin/bench setup role fail2ban executed with exit code 1
+2025-03-20 09:33:03,705 WARNING bench setup role fail2ban executed with exit code 1
+2025-03-20 09:33:03,706 WARNING /usr/local/bin/bench setup production mmduncan executed with exit code 1
+2025-03-20 09:34:45,326 INFO /usr/local/bin/bench setup production mmduncan
+2025-03-20 09:34:45,336 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2025-03-20 09:34:45,336 LOG Updated supervisord.conf: 'chown' changed from '' to 'mmduncan:mmduncan'
+2025-03-20 09:34:45,525 DEBUG sudo /usr/sbin/nginx -t
+2025-03-20 09:34:45,640 DEBUG sudo systemctl reload nginx
+2025-03-20 09:34:45,676 WARNING sudo systemctl reload nginx executed with exit code 1
+2025-03-20 09:34:45,676 WARNING /usr/local/bin/bench setup production mmduncan executed with exit code 1
+2025-03-20 09:34:59,543 INFO /usr/local/bin/bench setup nginx
+2025-03-20 09:43:37,088 INFO /usr/local/bin/bench setup production mmduncan
+2025-03-20 09:43:37,099 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2025-03-20 09:43:37,099 LOG Updated supervisord.conf: 'chown' changed from '' to 'mmduncan:mmduncan'
+2025-03-20 09:43:47,137 WARNING /usr/local/bin/bench setup production mmduncan executed with exit code 1
+2025-03-20 09:43:58,743 INFO /usr/local/bin/bench setup nginx
+2025-03-20 09:44:56,944 INFO /usr/local/bin/bench start
+2025-03-20 09:44:58,859 INFO /usr/local/bin/bench serve --port 8000
+2025-03-20 09:44:58,897 INFO /usr/local/bin/bench worker
+2025-03-20 09:44:58,897 INFO /usr/local/bin/bench schedule
+2025-03-20 09:44:58,928 INFO /usr/local/bin/bench watch
+2025-03-20 09:49:10,968 INFO /usr/local/bin/bench --site mysite.com add-to-hosts
+2025-03-20 09:53:29,136 INFO /usr/local/bin/bench --site mysite.com -serve port:8000
+2025-03-20 09:54:13,612 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-20 10:22:08,087 INFO /usr/local/bin/bench --site mysite.com install-app hrms
+2025-03-20 10:28:12,826 INFO /usr/local/bin/bench --site mysite.com install-app payments
+2025-03-20 10:49:56,158 INFO /usr/local/bin/bench --site mysite.com install-app erpnext
+2025-03-20 11:50:10,096 INFO /usr/local/bin/bench start
+2025-03-20 11:50:17,658 INFO /usr/local/bin/bench serve --port 8000
+2025-03-20 11:50:17,670 INFO /usr/local/bin/bench schedule
+2025-03-20 11:50:17,673 INFO /usr/local/bin/bench watch
+2025-03-20 11:50:17,676 INFO /usr/local/bin/bench worker
+2025-03-20 11:50:59,892 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-20 11:53:26,028 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-20 12:00:03,155 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-20 16:40:56,131 INFO /usr/local/bin/bench start
+2025-03-20 16:41:03,634 INFO /usr/local/bin/bench serve --port 8000
+2025-03-20 16:41:03,657 INFO /usr/local/bin/bench watch
+2025-03-20 16:41:03,674 INFO /usr/local/bin/bench schedule
+2025-03-20 16:41:03,675 INFO /usr/local/bin/bench worker
+2025-03-20 16:41:12,062 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-21 00:00:05,342 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-21 09:22:06,080 INFO /usr/local/bin/bench start
+2025-03-21 09:22:13,962 INFO /usr/local/bin/bench schedule
+2025-03-21 09:22:13,974 INFO /usr/local/bin/bench worker
+2025-03-21 09:22:14,000 INFO /usr/local/bin/bench watch
+2025-03-21 09:22:14,003 INFO /usr/local/bin/bench serve --port 8000
+2025-03-21 09:22:20,075 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-21 12:00:03,280 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-23 21:46:53,321 INFO /usr/local/bin/bench start
+2025-03-23 21:47:00,373 INFO /usr/local/bin/bench serve --port 8000
+2025-03-23 21:47:00,406 INFO /usr/local/bin/bench worker
+2025-03-23 21:47:00,436 INFO /usr/local/bin/bench schedule
+2025-03-23 21:47:00,442 INFO /usr/local/bin/bench watch
+2025-03-23 21:48:30,136 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-23 21:54:35,264 INFO /usr/local/bin/bench set-config -g developer_mode true
+2025-03-23 21:54:40,637 INFO /usr/local/bin/bench start
+2025-03-23 22:18:37,480 INFO /usr/local/bin/bench setup redis
+2025-03-23 22:20:01,161 INFO /usr/local/bin/bench --site mysite.com install-app erpnext
+2025-03-23 22:22:07,154 INFO /usr/local/bin/bench get-app --branch version-15.54.5 erpnext
+2025-03-23 22:22:22,128 INFO App moved from apps/erpnext to archived/apps/erpnext-2025-03-23
+2025-03-23 22:22:22,133 LOG Getting erpnext
+2025-03-23 22:22:22,133 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15.54.5 --depth 1 --origin upstream
+2025-03-23 22:22:24,947 WARNING cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15.54.5 --depth 1 --origin upstream executed with exit code 128
+2025-03-23 22:22:24,948 WARNING /usr/local/bin/bench get-app --branch version-15.54.5 erpnext executed with exit code 1
+2025-03-23 22:22:50,776 INFO /usr/local/bin/bench get-app erpnext
+2025-03-23 22:22:51,590 LOG Getting erpnext
+2025-03-23 22:22:51,591 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git  --depth 1 --origin upstream
+2025-03-23 22:23:11,627 LOG Installing erpnext
+2025-03-23 22:23:12,355 DEBUG cd /home/mmduncan/frappe-bench && /home/mmduncan/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mmduncan/frappe-bench/apps/erpnext 
+2025-03-23 22:24:00,120 DEBUG cd /home/mmduncan/frappe-bench/apps/erpnext && yarn install --check-files
+2025-03-23 22:24:05,198 DEBUG bench build --app erpnext
+2025-03-23 22:24:07,134 INFO /usr/local/bin/bench build --app erpnext
+2025-03-23 22:25:12,843 DEBUG cd /home/mmduncan/frappe-bench && supervisorctl restart frappe:
+2025-03-23 22:25:13,780 WARNING cd /home/mmduncan/frappe-bench && supervisorctl restart frappe: executed with exit code 7
+2025-03-23 22:25:13,780 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2025-03-23 22:25:27,260 INFO /usr/local/bin/bench --site mysite.com install-app erpnext
+2025-03-24 00:00:06,720 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-24 06:00:06,549 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-24 06:09:02,130 INFO /usr/local/bin/bench --site mysite.com mariadb
+2025-03-24 08:57:09,358 INFO /usr/local/bin/bench start
+2025-03-24 08:57:16,963 INFO /usr/local/bin/bench serve --port 8000
+2025-03-24 08:57:16,971 INFO /usr/local/bin/bench watch
+2025-03-24 08:57:16,977 INFO /usr/local/bin/bench schedule
+2025-03-24 08:57:16,981 INFO /usr/local/bin/bench worker
+2025-03-24 08:57:21,293 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-24 12:00:08,273 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-24 15:54:31,044 INFO /usr/local/bin/bench start
+2025-03-24 15:54:38,579 INFO /usr/local/bin/bench watch
+2025-03-24 15:54:38,582 INFO /usr/local/bin/bench worker
+2025-03-24 15:54:38,589 INFO /usr/local/bin/bench serve --port 8000
+2025-03-24 15:54:38,589 INFO /usr/local/bin/bench schedule
+2025-03-24 15:54:41,294 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-25 08:45:06,019 INFO /usr/local/bin/bench start
+2025-03-25 08:45:13,832 INFO /usr/local/bin/bench serve --port 8000
+2025-03-25 08:45:13,832 INFO /usr/local/bin/bench watch
+2025-03-25 08:45:13,838 INFO /usr/local/bin/bench schedule
+2025-03-25 08:45:13,843 INFO /usr/local/bin/bench worker
+2025-03-25 08:45:23,271 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-25 10:12:24,541 INFO /usr/local/bin/bench start
+2025-03-25 10:12:32,438 INFO /usr/local/bin/bench serve --port 8000
+2025-03-25 10:12:32,439 INFO /usr/local/bin/bench schedule
+2025-03-25 10:12:32,457 INFO /usr/local/bin/bench watch
+2025-03-25 10:12:32,466 INFO /usr/local/bin/bench worker
+2025-03-25 10:14:27,328 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-25 11:09:40,649 INFO /usr/local/bin/bench start
+2025-03-25 11:09:48,769 INFO /usr/local/bin/bench serve --port 8000
+2025-03-25 11:09:48,799 INFO /usr/local/bin/bench worker
+2025-03-25 11:09:48,820 INFO /usr/local/bin/bench schedule
+2025-03-25 11:09:48,822 INFO /usr/local/bin/bench watch
+2025-03-25 11:09:53,636 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-25 12:00:05,180 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-25 14:02:07,483 INFO /usr/local/bin/bench start
+2025-03-25 14:02:15,358 INFO /usr/local/bin/bench serve --port 8000
+2025-03-25 14:02:15,364 INFO /usr/local/bin/bench worker
+2025-03-25 14:02:15,373 INFO /usr/local/bin/bench schedule
+2025-03-25 14:02:15,377 INFO /usr/local/bin/bench watch
+2025-03-25 14:03:05,031 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-25 14:35:31,068 INFO /usr/local/bin/bench start
+2025-03-25 14:35:38,575 INFO /usr/local/bin/bench serve --port 8000
+2025-03-25 14:35:38,592 INFO /usr/local/bin/bench worker
+2025-03-25 14:35:38,616 INFO /usr/local/bin/bench schedule
+2025-03-25 14:35:38,624 INFO /usr/local/bin/bench watch
+2025-03-25 14:35:47,623 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-26 08:27:03,289 INFO /usr/local/bin/bench start
+2025-03-26 08:27:10,485 INFO /usr/local/bin/bench worker
+2025-03-26 08:27:10,488 INFO /usr/local/bin/bench schedule
+2025-03-26 08:27:10,495 INFO /usr/local/bin/bench serve --port 8000
+2025-03-26 08:27:10,498 INFO /usr/local/bin/bench watch
+2025-03-26 08:27:17,865 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-26 09:00:18,946 INFO /usr/local/bin/bench start
+2025-03-26 09:00:27,210 INFO /usr/local/bin/bench schedule
+2025-03-26 09:00:27,210 INFO /usr/local/bin/bench serve --port 8000
+2025-03-26 09:00:27,216 INFO /usr/local/bin/bench worker
+2025-03-26 09:00:27,244 INFO /usr/local/bin/bench watch
+2025-03-26 09:00:36,387 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-26 10:09:24,015 INFO /usr/local/bin/bench config get-common-config
+2025-03-26 10:09:24,212 WARNING /usr/local/bin/bench config get-common-config executed with exit code 2
+2025-03-26 11:31:21,398 INFO /usr/local/bin/bench start
+2025-03-26 11:31:29,077 INFO /usr/local/bin/bench serve --port 8000
+2025-03-26 11:31:29,077 INFO /usr/local/bin/bench schedule
+2025-03-26 11:31:29,090 INFO /usr/local/bin/bench worker
+2025-03-26 11:31:29,101 INFO /usr/local/bin/bench watch
+2025-03-26 11:31:30,437 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-26 12:00:12,771 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-26 16:08:56,478 INFO /usr/local/bin/bench start
+2025-03-26 16:09:04,373 INFO /usr/local/bin/bench serve --port 8000
+2025-03-26 16:09:04,373 INFO /usr/local/bin/bench watch
+2025-03-26 16:09:04,386 INFO /usr/local/bin/bench schedule
+2025-03-26 16:09:04,403 INFO /usr/local/bin/bench worker
+2025-03-26 16:09:09,309 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-26 16:34:51,917 INFO /usr/local/bin/bench start
+2025-03-26 16:34:59,456 INFO /usr/local/bin/bench serve --port 8000
+2025-03-26 16:34:59,460 INFO /usr/local/bin/bench worker
+2025-03-26 16:34:59,464 INFO /usr/local/bin/bench schedule
+2025-03-26 16:34:59,471 INFO /usr/local/bin/bench watch
+2025-03-26 16:35:03,037 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-27 08:30:27,736 INFO /usr/local/bin/bench start
+2025-03-27 08:30:34,256 INFO /usr/local/bin/bench worker
+2025-03-27 08:30:34,263 INFO /usr/local/bin/bench serve --port 8000
+2025-03-27 08:30:34,273 INFO /usr/local/bin/bench watch
+2025-03-27 08:30:34,286 INFO /usr/local/bin/bench schedule
+2025-03-27 08:30:45,286 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-27 10:55:04,843 INFO /usr/local/bin/bench start
+2025-03-27 10:55:12,411 INFO /usr/local/bin/bench serve --port 8000
+2025-03-27 10:55:12,422 INFO /usr/local/bin/bench worker
+2025-03-27 10:55:12,454 INFO /usr/local/bin/bench schedule
+2025-03-27 10:55:12,454 INFO /usr/local/bin/bench watch
+2025-03-27 10:55:29,974 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-27 12:00:02,948 INFO /usr/local/bin/bench --verbose --site all backup
+2025-03-27 12:32:46,198 INFO /usr/local/bin/bench start
+2025-03-27 12:32:54,946 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-27 12:32:55,153 INFO /usr/local/bin/bench schedule
+2025-03-27 12:32:55,229 INFO /usr/local/bin/bench worker
+2025-03-27 12:32:55,243 INFO /usr/local/bin/bench watch
+2025-03-27 12:32:55,258 INFO /usr/local/bin/bench serve --port 8000
+2025-03-27 12:33:11,209 INFO /usr/local/bin/bench --site mysite.com set-config server_script_enabled true
+2025-03-27 15:40:23,259 INFO /usr/local/bin/bench start
+2025-03-27 15:40:30,905 INFO /usr/local/bin/bench worker
+2025-03-27 15:40:30,907 INFO /usr/local/bin/bench serve --port 8000
+2025-03-27 15:40:30,926 INFO /usr/local/bin/bench schedule
+2025-03-27 15:40:30,930 INFO /usr/local/bin/bench watch
+2025-03-27 15:40:58,676 INFO /usr/local/bin/bench --site mysite.com serve --port 8001
+2025-03-27 15:44:47,177 INFO /usr/local/bin/bench new-app test_app
+2025-03-27 15:44:47,375 LOG creating new app test_app
+2025-03-27 15:46:52,364 WARNING /usr/local/bin/bench new-app test_app executed with exit code 1
+2025-03-27 15:47:04,493 INFO /usr/local/bin/bench new-app test_app
+2025-03-27 15:47:04,500 LOG creating new app test_app
+2025-03-27 15:48:01,272 LOG Installing test_app
+2025-03-27 15:48:01,275 DEBUG cd /home/mmduncan/frappe-bench && /home/mmduncan/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mmduncan/frappe-bench/apps/test_app 
+2025-03-27 15:48:14,193 DEBUG bench build --app test_app
+2025-03-27 15:48:14,386 INFO /usr/local/bin/bench build --app test_app
+2025-03-27 15:48:35,703 DEBUG cd /home/mmduncan/frappe-bench && supervisorctl restart frappe:
+2025-03-27 15:48:36,236 WARNING cd /home/mmduncan/frappe-bench && supervisorctl restart frappe: executed with exit code 7
+2025-03-27 15:48:36,236 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.

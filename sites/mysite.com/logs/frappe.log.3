@@ -1,0 +1,1090 @@
+2025-03-20 10:15:50,570 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'posting_date': '2025-03-20', 'party': 'Test Supplier', 'party_type': 'Supplier', 'account': '2110 - Creditors - TC', 'price_list': 'Standard Buying', 'fetch_payment_terms_template': '1', 'currency': 'KES', 'company': 'Test Company', 'doctype': 'Purchase Invoice', 'cmd': 'erpnext.accounts.party.get_party_details'}
+2025-03-20 10:16:22,328 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Purchase Invoice","name":"new-purchase-invoice-fkwcrbfezg","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","naming_series":"ACC-PINV-.YYYY.-","company":"Test Company","posting_date":"2025-03-20","set_posting_time":0,"is_paid":0,"is_return":0,"update_outstanding_for_self":1,"update_billed_amount_in_purchase_order":0,"update_billed_amount_in_purchase_receipt":1,"apply_tds":0,"currency":"KES","use_transaction_date_exchange_rate":0,"buying_price_list":"Standard Buying","price_list_currency":"KES","ignore_pricing_rule":0,"update_stock":0,"is_subcontracted":0,"items":[{"docstatus":0,"doctype":"Purchase Invoice Item","name":"new-purchase-invoice-item-sjuahwljka","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","conversion_factor":1,"stock_uom":"Gram","margin_type":"","is_free_item":0,"apply_tds":1,"use_serial_batch_fields":1,"is_fixed_asset":0,"enable_deferred_expense":0,"allow_zero_valuation_rate":0,"include_exploded_items":0,"cost_center":"Main - TC","page_break":0,"parent":"new-purchase-invoice-fkwcrbfezg","parentfield":"items","parenttype":"Purchase Invoice","idx":1,"received_qty":0,"qty":12,"rejected_qty":0,"stock_qty":12,"price_list_rate":0,"base_price_list_rate":0,"margin_rate_or_amount":0,"rate_with_margin":0,"discount_amount":0,"distributed_discount_amount":0,"base_rate_with_margin":0,"rate":15000,"amount":180000,"base_rate":15000,"base_amount":180000,"stock_uom_rate":15000,"net_rate":15000,"net_amount":180000,"base_net_rate":15000,"base_net_amount":180000,"valuation_rate":0,"sales_incoming_rate":0,"item_tax_amount":0,"landed_cost_voucher_amount":0,"rm_supp_cost":0,"weight_per_unit":1000,"total_weight":12000,"item_name":"Test Item","item_group":"All Item Groups","item_code":"Test Item","description":"Test Item","image":"","uom":"Gram","discount_percentage":0,"warehouse":"Stores - TC","expense_account":"5111 - Cost of Goods Sold - TC","item_tax_rate":"{}","weight_uom":"Gram","has_margin":false,"child_docname":"new-purchase-invoice-item-sjuahwljka"}],"tax_withholding_net_total":0,"taxes":[],"use_company_roundoff_cost_center":0,"disable_rounded_total":0,"apply_discount_on":"Grand Total","tax_withheld_vouchers":[],"pricing_rules":[],"supplied_items":[],"allocate_advances_automatically":0,"only_include_allocated_payments":0,"advances":[],"advance_tax":[],"ignore_default_payment_terms_template":0,"payment_schedule":[],"status":"Draft","party_account_currency":"KES","is_opening":"No","group_same_items":0,"on_hold":0,"is_internal_supplier":0,"represents_company":"","is_old_subcontracting_flow":0,"posting_time":"10:15:46","conversion_rate":1,"plc_conversion_rate":1,"credit_to":"2110 - Creditors - TC","billing_address":"","shipping_address":"","billing_address_display":"","shipping_address_display":"","base_net_total":180000,"net_total":180000,"base_total":180000,"total":180000,"total_qty":12,"rounding_adjustment":0,"grand_total":180000,"taxes_and_charges_deducted":0,"taxes_and_charges_added":0,"base_grand_total":180000,"base_taxes_and_charges_added":0,"base_taxes_and_charges_deducted":0,"total_taxes_and_charges":0,"base_total_taxes_and_charges":0,"base_rounding_adjustment":0,"rounded_total":180000,"base_rounded_total":180000,"in_words":"","base_in_words":"","base_discount_amount":0,"total_advance":0,"supplier_name":"Test Supplier","supplier":"Test Supplier","total_net_weight":12000,"write_off_amount":0,"paid_amount":0,"base_paid_amount":0,"outstanding_amount":180000,"idx":0,"base_tax_withholding_net_total":0,"additional_discount_percentage":0,"discount_amount":0,"base_write_off_amount":0,"per_received":0,"change_amount":0,"base_change_amount":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-03-20 10:17:06,929 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Purchase Invoice","name":"new-purchase-invoice-fkwcrbfezg","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","naming_series":"ACC-PINV-.YYYY.-","company":"Test Company","posting_date":"2025-03-20","set_posting_time":0,"is_paid":0,"is_return":0,"update_outstanding_for_self":1,"update_billed_amount_in_purchase_order":0,"update_billed_amount_in_purchase_receipt":1,"apply_tds":0,"currency":"KES","use_transaction_date_exchange_rate":0,"buying_price_list":"Standard Buying","price_list_currency":"KES","ignore_pricing_rule":0,"update_stock":0,"is_subcontracted":0,"items":[{"docstatus":0,"doctype":"Purchase Invoice Item","name":"new-purchase-invoice-item-sjuahwljka","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","conversion_factor":1,"stock_uom":"Gram","margin_type":"","is_free_item":0,"apply_tds":1,"use_serial_batch_fields":1,"is_fixed_asset":0,"enable_deferred_expense":0,"allow_zero_valuation_rate":0,"include_exploded_items":0,"cost_center":"Main - TC","page_break":0,"parent":"new-purchase-invoice-fkwcrbfezg","parentfield":"items","parenttype":"Purchase Invoice","idx":1,"received_qty":0,"qty":12,"rejected_qty":0,"stock_qty":12,"price_list_rate":0,"base_price_list_rate":0,"margin_rate_or_amount":0,"rate_with_margin":0,"discount_amount":0,"distributed_discount_amount":0,"base_rate_with_margin":0,"rate":15000,"amount":180000,"base_rate":15000,"base_amount":180000,"stock_uom_rate":15000,"net_rate":15000,"net_amount":180000,"base_net_rate":15000,"base_net_amount":180000,"valuation_rate":0,"sales_incoming_rate":0,"item_tax_amount":0,"landed_cost_voucher_amount":0,"rm_supp_cost":0,"weight_per_unit":1000,"total_weight":12000,"item_name":"Test Item","item_group":"All Item Groups","item_code":"Test Item","description":"Test Item","image":"","uom":"Gram","discount_percentage":0,"warehouse":"Stores - TC","expense_account":"5111 - Cost of Goods Sold - TC","item_tax_rate":"{}","weight_uom":"Gram","has_margin":false,"child_docname":"new-purchase-invoice-item-sjuahwljka"}],"tax_withholding_net_total":0,"taxes":[{"docstatus":0,"doctype":"Purchase Taxes and Charges","name":"new-purchase-taxes-and-charges-zwzqyxspfw","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","category":"Total","add_deduct_tax":"Add","charge_type":"On Net Total","included_in_print_rate":0,"included_in_paid_amount":0,"is_tax_withholding_account":0,"set_by_item_tax_template":0,"cost_center":"Main - TC","account_currency":"KES","parent":"new-purchase-invoice-fkwcrbfezg","parentfield":"taxes","parenttype":"Purchase Invoice","idx":1,"__unedited":false,"account_head":"5118 - Expenses Included In Valuation - TC","rate":14,"description":"Expenses Included In Valuation","item_wise_tax_detail":"{\\"Test Item\\":{\\"tax_rate\\":14,\\"tax_amount\\":25200,\\"net_amount\\":0}}","total":205200,"tax_amount_after_discount_amount":25200,"tax_amount":25200,"net_amount":0,"base_net_amount":0,"base_tax_amount":25200,"base_total":205200,"base_tax_amount_after_discount_amount":25200}],"use_company_roundoff_cost_center":0,"disable_rounded_total":0,"apply_discount_on":"Grand Total","tax_withheld_vouchers":[],"pricing_rules":[],"supplied_items":[],"allocate_advances_automatically":0,"only_include_allocated_payments":0,"advances":[],"advance_tax":[],"ignore_default_payment_terms_template":0,"payment_schedule":[],"status":"Draft","party_account_currency":"KES","is_opening":"No","group_same_items":0,"on_hold":0,"is_internal_supplier":0,"represents_company":"","is_old_subcontracting_flow":0,"posting_time":"10:15:46","conversion_rate":1,"plc_conversion_rate":1,"credit_to":"2110 - Creditors - TC","billing_address":"","shipping_address":"","billing_address_display":"","shipping_address_display":"","base_net_total":180000,"net_total":180000,"base_total":180000,"total":180000,"total_qty":12,"rounding_adjustment":0,"grand_total":205200,"taxes_and_charges_deducted":0,"taxes_and_charges_added":25200,"base_grand_total":205200,"base_taxes_and_charges_added":25200,"base_taxes_and_charges_deducted":0,"total_taxes_and_charges":25200,"base_total_taxes_and_charges":25200,"base_rounding_adjustment":0,"rounded_total":205200,"base_rounded_total":205200,"in_words":"","base_in_words":"","base_discount_amount":0,"total_advance":0,"supplier_name":"Test Supplier","supplier":"Test Supplier","total_net_weight":12000,"write_off_amount":0,"paid_amount":0,"base_paid_amount":0,"outstanding_amount":205200,"idx":0,"base_tax_withholding_net_total":0,"additional_discount_percentage":0,"discount_amount":0,"base_write_off_amount":0,"per_received":0,"change_amount":0,"base_change_amount":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-03-20 10:18:42,106 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Address","name":"new-address-rqsilxxbqh","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","address_type":"Billing","country":"Kenya","is_primary_address":0,"is_shipping_address":0,"disabled":0,"links":[{"docstatus":0,"doctype":"Dynamic Link","name":"new-dynamic-link-obdjzknuft","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","parent":"new-address-rqsilxxbqh","parentfield":"links","parenttype":"Address","idx":1,"__unedited":false,"link_doctype":"Bank","link_name":"Test Bank"}],"address_title":"Test Address","address_line1":"41 Test","city":"Test City"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-03-20 10:18:59,241 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Address","name":"new-address-rqsilxxbqh","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","address_type":"Billing","country":"Kenya","is_primary_address":0,"is_shipping_address":0,"disabled":0,"links":[{"docstatus":0,"doctype":"Dynamic Link","name":"new-dynamic-link-obdjzknuft","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","parent":"new-address-rqsilxxbqh","parentfield":"links","parenttype":"Address","idx":1,"__unedited":false,"link_doctype":"Bank","link_name":"Test Bank"}],"address_title":"Test Address","address_line1":"41 Test","city":"Test City"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-03-20 10:19:49,361 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Address","name":"new-address-runztzxzwh","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","address_type":"Billing","country":"Kenya","is_primary_address":0,"is_shipping_address":0,"disabled":0,"links":[{"docstatus":0,"doctype":"Dynamic Link","name":"new-dynamic-link-secwydynjw","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","parent":"new-address-runztzxzwh","parentfield":"links","parenttype":"Address","idx":1,"__unedited":false,"link_doctype":"Bank","link_name":"Test Bank"}],"address_title":"Test Address","address_line1":"41 Test","city":"Test City"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-03-20 10:20:11,763 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'posting_date': '2025-03-20', 'party': 'Test Customer', 'party_type': 'Customer', 'price_list': 'Standard Selling', 'fetch_payment_terms_template': '1', 'currency': 'KES', 'company': 'Test Company', 'doctype': 'Sales Invoice', 'cmd': 'erpnext.accounts.party.get_party_details'}
+2025-03-20 10:25:32,257 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'posting_date': '2025-03-20', 'party': 'Test Customer', 'party_type': 'Customer', 'price_list': 'Standard Selling', 'fetch_payment_terms_template': '1', 'currency': 'KES', 'company': 'Test Company', 'doctype': 'Sales Invoice', 'cmd': 'erpnext.accounts.party.get_party_details'}
+2025-03-20 10:29:07,481 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'posting_date': '2025-03-20', 'party': 'Test Customer', 'party_type': 'Customer', 'price_list': 'Standard Selling', 'fetch_payment_terms_template': '1', 'currency': 'KES', 'company': 'Test Company', 'doctype': 'Sales Invoice', 'cmd': 'erpnext.accounts.party.get_party_details'}
+2025-03-20 10:30:16,910 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Sales Invoice","name":"new-sales-invoice-jngnetftbg","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","naming_series":"ACC-SINV-.YYYY.-","company":"Test Company","posting_date":"2025-03-20","set_posting_time":0,"is_pos":0,"is_consolidated":0,"is_return":0,"update_outstanding_for_self":1,"update_billed_amount_in_sales_order":0,"update_billed_amount_in_delivery_note":1,"is_debit_note":0,"currency":"KES","selling_price_list":"Standard Selling","price_list_currency":"KES","ignore_pricing_rule":0,"update_stock":0,"items":[{"docstatus":0,"doctype":"Sales Invoice Item","name":"new-sales-invoice-item-pbtiyvzlye","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","has_item_scanned":0,"stock_uom":"Gram","margin_type":"","is_free_item":0,"grant_commission":1,"delivered_by_supplier":0,"is_fixed_asset":0,"enable_deferred_revenue":0,"use_serial_batch_fields":1,"allow_zero_valuation_rate":0,"cost_center":"Main - TC","page_break":0,"parent":"new-sales-invoice-jngnetftbg","parentfield":"items","parenttype":"Sales Invoice","idx":1,"qty":12,"conversion_factor":1,"stock_qty":12,"price_list_rate":0,"base_price_list_rate":0,"margin_rate_or_amount":0,"rate_with_margin":0,"discount_amount":0,"distributed_discount_amount":0,"base_rate_with_margin":0,"rate":15000,"amount":180000,"base_rate":15000,"base_amount":180000,"stock_uom_rate":15000,"net_rate":15000,"net_amount":180000,"base_net_rate":15000,"base_net_amount":180000,"weight_per_unit":1000,"total_weight":12000,"incoming_rate":0,"actual_batch_qty":0,"actual_qty":0,"company_total_stock":0,"delivered_qty":0,"item_code":"Test Item","barcode":"6161101532310","item_name":"Test Item","customer_item_code":"111","description":"Test Item","item_group":"All Item Groups","image":"","uom":"Gram","discount_percentage":0,"income_account":"4110 - Sales - TC","expense_account":"5111 - Cost of Goods Sold - TC","weight_uom":"Gram","warehouse":"Stores - TC","item_tax_rate":"{}","has_margin":false,"child_docname":"new-sales-invoice-item-pbtiyvzlye"}],"taxes":[{"docstatus":0,"doctype":"Sales Taxes and Charges","name":"new-sales-taxes-and-charges-itkdaxbikh","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","charge_type":"On Net Total","included_in_print_rate":0,"included_in_paid_amount":0,"set_by_item_tax_template":0,"cost_center":"Main - TC","account_currency":"KES","dont_recompute_tax":0,"parent":"new-sales-invoice-jngnetftbg","parentfield":"taxes","parenttype":"Sales Invoice","idx":1,"__unedited":false,"account_head":"5205 - Freight and Forwarding Charges - TC","rate":14,"description":"Freight and Forwarding Charges","item_wise_tax_detail":"{\\"Test Item\\":{\\"tax_rate\\":14,\\"tax_amount\\":25200,\\"net_amount\\":0}}","total":205200,"tax_amount_after_discount_amount":25200,"tax_amount":25200,"net_amount":0,"base_net_amount":0,"base_tax_amount":25200,"base_total":205200,"base_tax_amount_after_discount_amount":25200}],"use_company_roundoff_cost_center":0,"disable_rounded_total":0,"apply_discount_on":"Grand Total","is_cash_or_non_trade_discount":0,"pricing_rules":[],"packed_items":[],"timesheets":[],"total_billing_amount":0,"payments":[],"allocate_advances_automatically":0,"only_include_allocated_payments":0,"advances":[],"write_off_outstanding_amount_automatically":0,"redeem_loyalty_points":0,"dont_create_loyalty_points":0,"ignore_default_payment_terms_template":0,"payment_schedule":[],"party_account_currency":"KES","is_opening":"No","sales_team":[],"group_same_items":0,"language":"en-US","status":"Draft","is_internal_customer":0,"is_discounted":0,"posting_time":"10:29:02","conversion_rate":1,"plc_conversion_rate":1,"total_billing_hours":0,"company_address":"","company_address_display":"","base_net_total":180000,"net_total":180000,"base_total":180000,"total":180000,"total_qty":12,"rounding_adjustment":0,"grand_total":205200,"base_grand_total":205200,"total_taxes_and_charges":25200,"base_total_taxes_and_charges":25200,"base_rounding_adjustment":0,"rounded_total":205200,"base_rounded_total":205200,"in_words":"","base_in_words":"","base_discount_amount":0,"total_advance":0,"write_off_amount":0,"paid_amount":0,"base_paid_amount":0,"change_amount":0,"base_change_amount":0,"outstanding_amount":205200,"amount_eligible_for_commission":180000,"total_commission":0,"customer_name":"Test Customer","customer":"Test Customer","due_date":"2025-03-31","idx":0,"total_net_weight":12000,"additional_discount_percentage":0,"discount_amount":0,"base_write_off_amount":0,"loyalty_points":0,"loyalty_amount":0,"commission_rate":0,"tax_category":"Test Tax","debit_to":"1310 - Debtors - TC"}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-03-20 10:49:28,677 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'posting_date': '2025-03-20', 'party': 'Test Supplier', 'party_type': 'Supplier', 'price_list': 'Standard Buying', 'fetch_payment_terms_template': '1', 'currency': 'KES', 'company': 'Test Company', 'doctype': 'Purchase Order', 'cmd': 'erpnext.accounts.party.get_party_details'}
+2025-03-20 10:49:28,774 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'party': 'Test Supplier', 'party_type': 'Supplier', 'price_list': 'Standard Buying', 'posting_date': '2025-03-20', 'fetch_payment_terms_template': '1', 'currency': 'KES', 'company': 'Test Company', 'doctype': 'Purchase Order', 'cmd': 'erpnext.accounts.party.get_party_details'}
+2025-03-20 10:59:13,135 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Purchase Order","name":"new-purchase-order-wpjuamuotv","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","title":"{supplier_name}","naming_series":"PUR-ORD-.YYYY.-","transaction_date":"2025-03-20","company":"Test Company","apply_tds":0,"is_subcontracted":0,"currency":"KES","buying_price_list":"Standard Buying","price_list_currency":"KES","ignore_pricing_rule":0,"items":[{"docstatus":0,"doctype":"Purchase Order Item","name":"new-purchase-order-item-ikmxscrsac","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","fg_item_qty":1,"stock_uom":"Gram","margin_type":"","is_free_item":0,"apply_tds":1,"delivered_by_supplier":0,"against_blanket_order":0,"include_exploded_items":0,"is_fixed_asset":0,"page_break":0,"parent":"new-purchase-order-wpjuamuotv","parentfield":"items","parenttype":"Purchase Order","idx":1,"qty":12,"subcontracted_quantity":0,"conversion_factor":1,"stock_qty":12,"price_list_rate":0,"last_purchase_rate":0,"base_price_list_rate":0,"margin_rate_or_amount":0,"rate_with_margin":0,"discount_amount":0,"distributed_discount_amount":0,"base_rate_with_margin":0,"rate":15000,"amount":180000,"base_rate":15000,"base_amount":180000,"stock_uom_rate":15000,"net_rate":15000,"net_amount":180000,"base_net_rate":15000,"base_net_amount":180000,"actual_qty":0,"company_total_stock":0,"blanket_order_rate":0,"received_qty":0,"returned_qty":0,"billed_amt":0,"weight_per_unit":1000,"total_weight":12000,"item_code":"Test Item","item_name":"Test Item","item_group":"All Item Groups","description":"Test Item","image":"","uom":"Gram","discount_percentage":0,"warehouse":"Stores - TC","expense_account":"5111 - Cost of Goods Sold - TC","weight_uom":"Gram","cost_center":"Main - TC","item_tax_rate":"{}","schedule_date":"2025-03-31","has_margin":false,"child_docname":"new-purchase-order-item-ikmxscrsac"}],"tax_withholding_net_total":0,"pricing_rules":[],"supplied_items":[],"taxes":[{"docstatus":0,"doctype":"Purchase Taxes and Charges","name":"new-purchase-taxes-and-charges-axlxdejoel","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","category":"Total","add_deduct_tax":"Add","charge_type":"On Net Total","included_in_print_rate":0,"included_in_paid_amount":0,"is_tax_withholding_account":0,"set_by_item_tax_template":0,"cost_center":"Main - TC","account_currency":"KES","parent":"new-purchase-order-wpjuamuotv","parentfield":"taxes","parenttype":"Purchase Order","idx":1,"__unedited":false,"rate":0,"item_wise_tax_detail":"{\\"Test Item\\":{\\"tax_rate\\":0,\\"tax_amount\\":0,\\"net_amount\\":0}}","total":180000,"tax_amount_after_discount_amount":0,"tax_amount":0,"net_amount":0,"base_net_amount":0,"base_tax_amount":0,"base_total":180000,"base_tax_amount_after_discount_amount":0,"account_head":"5118 - Expenses Included In Valuation - TC","description":"Expenses Included In Valuation"}],"disable_rounded_total":0,"apply_discount_on":"Grand Total","payment_schedule":[],"status":"Draft","advance_payment_status":"Not Initiated","group_same_items":0,"is_internal_supplier":0,"party_account_currency":"KES","is_old_subcontracting_flow":0,"advance_paid":0,"conversion_rate":1,"plc_conversion_rate":1,"billing_address":"","shipping_address":"","billing_address_display":"","shipping_address_display":"","base_net_total":180000,"net_total":180000,"base_total":180000,"total":180000,"total_qty":12,"rounding_adjustment":0,"grand_total":180000,"taxes_and_charges_deducted":0,"taxes_and_charges_added":0,"base_grand_total":180000,"base_taxes_and_charges_added":0,"base_taxes_and_charges_deducted":0,"total_taxes_and_charges":0,"base_total_taxes_and_charges":0,"base_rounding_adjustment":0,"rounded_total":180000,"base_rounded_total":180000,"in_words":"","base_in_words":"","base_discount_amount":0,"supplier_name":"Test Supplier","represents_company":"","supplier":"Test Supplier","idx":0,"total_net_weight":12000,"base_tax_withholding_net_total":0,"additional_discount_percentage":0,"discount_amount":0,"per_billed":0,"per_received":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-03-20 11:08:19,366 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Purchase Order","name":"new-purchase-order-wpjuamuotv","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","title":"{supplier_name}","naming_series":"PUR-ORD-.YYYY.-","transaction_date":"2025-03-20","company":"Test Company","apply_tds":0,"is_subcontracted":0,"currency":"KES","buying_price_list":"Standard Buying","price_list_currency":"KES","ignore_pricing_rule":0,"items":[{"docstatus":0,"doctype":"Purchase Order Item","name":"new-purchase-order-item-ikmxscrsac","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","fg_item_qty":1,"stock_uom":"Gram","margin_type":"","is_free_item":0,"apply_tds":1,"delivered_by_supplier":0,"against_blanket_order":0,"include_exploded_items":0,"is_fixed_asset":0,"page_break":0,"parent":"new-purchase-order-wpjuamuotv","parentfield":"items","parenttype":"Purchase Order","idx":1,"qty":12,"subcontracted_quantity":0,"conversion_factor":1,"stock_qty":12,"price_list_rate":0,"last_purchase_rate":0,"base_price_list_rate":0,"margin_rate_or_amount":0,"rate_with_margin":0,"discount_amount":0,"distributed_discount_amount":0,"base_rate_with_margin":0,"rate":15000,"amount":180000,"base_rate":15000,"base_amount":180000,"stock_uom_rate":15000,"net_rate":15000,"net_amount":180000,"base_net_rate":15000,"base_net_amount":180000,"actual_qty":0,"company_total_stock":0,"blanket_order_rate":0,"received_qty":0,"returned_qty":0,"billed_amt":0,"weight_per_unit":1000,"total_weight":12000,"item_code":"Test Item","item_name":"Test Item","item_group":"All Item Groups","description":"Test Item","image":"","uom":"Gram","discount_percentage":0,"warehouse":"Stores - TC","expense_account":"5111 - Cost of Goods Sold - TC","weight_uom":"Gram","cost_center":"Main - TC","item_tax_rate":"{}","schedule_date":"2025-03-31","has_margin":false,"child_docname":"new-purchase-order-item-ikmxscrsac"}],"tax_withholding_net_total":0,"pricing_rules":[],"supplied_items":[],"taxes":[{"docstatus":0,"doctype":"Purchase Taxes and Charges","name":"new-purchase-taxes-and-charges-axlxdejoel","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","category":"Total","add_deduct_tax":"Add","charge_type":"On Net Total","included_in_print_rate":0,"included_in_paid_amount":0,"is_tax_withholding_account":0,"set_by_item_tax_template":0,"cost_center":"Main - TC","account_currency":"KES","parent":"new-purchase-order-wpjuamuotv","parentfield":"taxes","parenttype":"Purchase Order","idx":1,"__unedited":false,"rate":0,"item_wise_tax_detail":"{\\"Test Item\\":{\\"tax_rate\\":0,\\"tax_amount\\":0,\\"net_amount\\":0}}","total":180000,"tax_amount_after_discount_amount":0,"tax_amount":0,"net_amount":0,"base_net_amount":0,"base_tax_amount":0,"base_total":180000,"base_tax_amount_after_discount_amount":0,"account_head":"5118 - Expenses Included In Valuation - TC","description":"Expenses Included In Valuation"}],"disable_rounded_total":0,"apply_discount_on":"Grand Total","payment_schedule":[],"status":"Draft","advance_payment_status":"Not Initiated","group_same_items":0,"is_internal_supplier":0,"party_account_currency":"KES","is_old_subcontracting_flow":0,"advance_paid":0,"conversion_rate":1,"plc_conversion_rate":1,"billing_address":"","shipping_address":"","billing_address_display":"","shipping_address_display":"","base_net_total":180000,"net_total":180000,"base_total":180000,"total":180000,"total_qty":12,"rounding_adjustment":0,"grand_total":180000,"taxes_and_charges_deducted":0,"taxes_and_charges_added":0,"base_grand_total":180000,"base_taxes_and_charges_added":0,"base_taxes_and_charges_deducted":0,"total_taxes_and_charges":0,"base_total_taxes_and_charges":0,"base_rounding_adjustment":0,"rounded_total":180000,"base_rounded_total":180000,"in_words":"","base_in_words":"","base_discount_amount":0,"supplier_name":"Test Supplier","represents_company":"","supplier":"Test Supplier","idx":0,"total_net_weight":12000,"base_tax_withholding_net_total":0,"additional_discount_percentage":0,"discount_amount":0,"per_billed":0,"per_received":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-03-20 11:09:06,037 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Purchase Order","name":"new-purchase-order-wpjuamuotv","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","title":"{supplier_name}","naming_series":"PUR-ORD-.YYYY.-","transaction_date":"2025-03-20","company":"Test Company","apply_tds":0,"is_subcontracted":0,"currency":"KES","buying_price_list":"Standard Buying","price_list_currency":"KES","ignore_pricing_rule":0,"items":[{"docstatus":0,"doctype":"Purchase Order Item","name":"new-purchase-order-item-ikmxscrsac","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","fg_item_qty":1,"stock_uom":"Gram","margin_type":"","is_free_item":0,"apply_tds":1,"delivered_by_supplier":0,"against_blanket_order":0,"include_exploded_items":0,"is_fixed_asset":0,"page_break":0,"parent":"new-purchase-order-wpjuamuotv","parentfield":"items","parenttype":"Purchase Order","idx":1,"qty":12,"subcontracted_quantity":0,"conversion_factor":1,"stock_qty":12,"price_list_rate":0,"last_purchase_rate":0,"base_price_list_rate":0,"margin_rate_or_amount":0,"rate_with_margin":0,"discount_amount":0,"distributed_discount_amount":0,"base_rate_with_margin":0,"rate":15000,"amount":180000,"base_rate":15000,"base_amount":180000,"stock_uom_rate":15000,"net_rate":15000,"net_amount":180000,"base_net_rate":15000,"base_net_amount":180000,"actual_qty":0,"company_total_stock":0,"blanket_order_rate":0,"received_qty":0,"returned_qty":0,"billed_amt":0,"weight_per_unit":1000,"total_weight":12000,"item_code":"Test Item","item_name":"Test Item","item_group":"All Item Groups","description":"Test Item","image":"","uom":"Gram","discount_percentage":0,"warehouse":"Stores - TC","expense_account":"5111 - Cost of Goods Sold - TC","weight_uom":"Gram","cost_center":"Main - TC","item_tax_rate":"{}","schedule_date":"2025-03-31","has_margin":false,"child_docname":"new-purchase-order-item-ikmxscrsac"}],"tax_withholding_net_total":0,"pricing_rules":[],"supplied_items":[],"taxes":[{"docstatus":0,"doctype":"Purchase Taxes and Charges","name":"new-purchase-taxes-and-charges-axlxdejoel","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","category":"Total","add_deduct_tax":"Add","charge_type":"On Net Total","included_in_print_rate":0,"included_in_paid_amount":0,"is_tax_withholding_account":0,"set_by_item_tax_template":0,"cost_center":"Main - TC","account_currency":"KES","parent":"new-purchase-order-wpjuamuotv","parentfield":"taxes","parenttype":"Purchase Order","idx":1,"__unedited":false,"rate":0,"item_wise_tax_detail":"{\\"Test Item\\":{\\"tax_rate\\":0,\\"tax_amount\\":0,\\"net_amount\\":0}}","total":180000,"tax_amount_after_discount_amount":0,"tax_amount":0,"net_amount":0,"base_net_amount":0,"base_tax_amount":0,"base_total":180000,"base_tax_amount_after_discount_amount":0,"account_head":"5118 - Expenses Included In Valuation - TC","description":"Expenses Included In Valuation"}],"disable_rounded_total":0,"apply_discount_on":"Grand Total","payment_schedule":[],"status":"Draft","advance_payment_status":"Not Initiated","group_same_items":0,"is_internal_supplier":0,"party_account_currency":"KES","is_old_subcontracting_flow":0,"advance_paid":0,"conversion_rate":1,"plc_conversion_rate":1,"billing_address":"","shipping_address":"","billing_address_display":"","shipping_address_display":"","base_net_total":180000,"net_total":180000,"base_total":180000,"total":180000,"total_qty":12,"rounding_adjustment":0,"grand_total":180000,"taxes_and_charges_deducted":0,"taxes_and_charges_added":0,"base_grand_total":180000,"base_taxes_and_charges_added":0,"base_taxes_and_charges_deducted":0,"total_taxes_and_charges":0,"base_total_taxes_and_charges":0,"base_rounding_adjustment":0,"rounded_total":180000,"base_rounded_total":180000,"in_words":"","base_in_words":"","base_discount_amount":0,"supplier_name":"Test Supplier","represents_company":"","supplier":"Test Supplier","idx":0,"total_net_weight":12000,"base_tax_withholding_net_total":0,"additional_discount_percentage":0,"discount_amount":0,"per_billed":0,"per_received":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-03-20 11:27:51,962 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'doc': '{"docstatus":0,"doctype":"Purchase Order","name":"new-purchase-order-wpjuamuotv","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","title":"{supplier_name}","naming_series":"PUR-ORD-.YYYY.-","transaction_date":"2025-03-20","company":"Test Company","apply_tds":0,"is_subcontracted":0,"currency":"KES","buying_price_list":"Standard Buying","price_list_currency":"KES","ignore_pricing_rule":0,"items":[{"docstatus":0,"doctype":"Purchase Order Item","name":"new-purchase-order-item-ikmxscrsac","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","fg_item_qty":1,"stock_uom":"Gram","margin_type":"","is_free_item":0,"apply_tds":1,"delivered_by_supplier":0,"against_blanket_order":0,"include_exploded_items":0,"is_fixed_asset":0,"page_break":0,"parent":"new-purchase-order-wpjuamuotv","parentfield":"items","parenttype":"Purchase Order","idx":1,"qty":12,"subcontracted_quantity":0,"conversion_factor":1,"stock_qty":12,"price_list_rate":0,"last_purchase_rate":0,"base_price_list_rate":0,"margin_rate_or_amount":0,"rate_with_margin":0,"discount_amount":0,"distributed_discount_amount":0,"base_rate_with_margin":0,"rate":15000,"amount":180000,"base_rate":15000,"base_amount":180000,"stock_uom_rate":15000,"net_rate":15000,"net_amount":180000,"base_net_rate":15000,"base_net_amount":180000,"actual_qty":0,"company_total_stock":0,"blanket_order_rate":0,"received_qty":0,"returned_qty":0,"billed_amt":0,"weight_per_unit":1000,"total_weight":12000,"item_code":"Test Item","item_name":"Test Item","item_group":"All Item Groups","description":"Test Item","image":"","uom":"Gram","discount_percentage":0,"warehouse":"Stores - TC","expense_account":"5111 - Cost of Goods Sold - TC","weight_uom":"Gram","cost_center":"Main - TC","item_tax_rate":"{}","schedule_date":"2025-03-31","has_margin":false,"child_docname":"new-purchase-order-item-ikmxscrsac"}],"tax_withholding_net_total":0,"pricing_rules":[],"supplied_items":[],"taxes":[{"docstatus":0,"doctype":"Purchase Taxes and Charges","name":"new-purchase-taxes-and-charges-axlxdejoel","__islocal":1,"__unsaved":1,"owner":"muriithiduncan963@gmail.com","category":"Total","add_deduct_tax":"Add","charge_type":"On Net Total","included_in_print_rate":0,"included_in_paid_amount":0,"is_tax_withholding_account":0,"set_by_item_tax_template":0,"cost_center":"Main - TC","account_currency":"KES","parent":"new-purchase-order-wpjuamuotv","parentfield":"taxes","parenttype":"Purchase Order","idx":1,"__unedited":false,"rate":0,"item_wise_tax_detail":"{\\"Test Item\\":{\\"tax_rate\\":0,\\"tax_amount\\":0,\\"net_amount\\":0}}","total":180000,"tax_amount_after_discount_amount":0,"tax_amount":0,"net_amount":0,"base_net_amount":0,"base_tax_amount":0,"base_total":180000,"base_tax_amount_after_discount_amount":0,"account_head":"5118 - Expenses Included In Valuation - TC","description":"Expenses Included In Valuation"}],"disable_rounded_total":0,"apply_discount_on":"Grand Total","payment_schedule":[],"status":"Draft","advance_payment_status":"Not Initiated","group_same_items":0,"is_internal_supplier":0,"party_account_currency":"KES","is_old_subcontracting_flow":0,"advance_paid":0,"conversion_rate":1,"plc_conversion_rate":1,"billing_address":"","shipping_address":"","billing_address_display":"","shipping_address_display":"","base_net_total":180000,"net_total":180000,"base_total":180000,"total":180000,"total_qty":12,"rounding_adjustment":0,"grand_total":180000,"taxes_and_charges_deducted":0,"taxes_and_charges_added":0,"base_grand_total":180000,"base_taxes_and_charges_added":0,"base_taxes_and_charges_deducted":0,"total_taxes_and_charges":0,"base_total_taxes_and_charges":0,"base_rounding_adjustment":0,"rounded_total":180000,"base_rounded_total":180000,"in_words":"","base_in_words":"","base_discount_amount":0,"supplier_name":"Test Supplier","represents_company":"","supplier":"Test Supplier","idx":0,"total_net_weight":12000,"base_tax_withholding_net_total":0,"additional_discount_percentage":0,"discount_amount":0,"per_billed":0,"per_received":0}', 'action': 'Save', 'cmd': 'frappe.desk.form.save.savedocs'}
+2025-03-20 11:29:56,657 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'posting_date': '2025-03-20', 'party': 'Test Supplier', 'party_type': 'Supplier', 'price_list': 'Standard Buying', 'fetch_payment_terms_template': '1', 'currency': 'KES', 'company': 'Test Company', 'doctype': 'Purchase Order', 'cmd': 'erpnext.accounts.party.get_party_details'}
+2025-03-20 11:29:56,802 ERROR frappe New Exception collected in error log
+Site: mysite.com
+Form Dict: {'party': 'Test Supplier', 'party_type': 'Supplier', 'price_list': 'Standard Buying', 'posting_date': '2025-03-20', 'fetch_payment_terms_template': '1', 'currency': 'KES', 'company': 'Test Company', 'doctype': 'Purchase Order', 'cmd': 'erpnext.accounts.party.get_party_details'}
+2025-03-20 11:51:48,968 ERROR frappe Unable to load translations
+Site: mysite.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 97, in application
+    init_request(request)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 174, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 267, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1429, in setup_module_map
+    apps = get_installed_apps(_ensure_on_bench=True)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 246, in hget
+    value = generator()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 189, in get_translations_from_apps
+    for app in apps or frappe.get_installed_apps(_ensure_on_bench=True):
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2025-03-20 11:51:49,388 ERROR frappe Unable to load translations
+Site: mysite.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 97, in application
+    init_request(request)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 174, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 267, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1429, in setup_module_map
+    apps = get_installed_apps(_ensure_on_bench=True)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 246, in hget
+    value = generator()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 189, in get_translations_from_apps
+    for app in apps or frappe.get_installed_apps(_ensure_on_bench=True):
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2025-03-20 11:51:52,930 ERROR frappe Unable to load translations
+Site: mysite.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 97, in application
+    init_request(request)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 174, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 267, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1429, in setup_module_map
+    apps = get_installed_apps(_ensure_on_bench=True)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 246, in hget
+    value = generator()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 189, in get_translations_from_apps
+    for app in apps or frappe.get_installed_apps(_ensure_on_bench=True):
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2025-03-20 11:51:52,951 ERROR frappe Unable to load translations
+Site: mysite.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 97, in application
+    init_request(request)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 174, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 267, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1429, in setup_module_map
+    apps = get_installed_apps(_ensure_on_bench=True)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 246, in hget
+    value = generator()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 189, in get_translations_from_apps
+    for app in apps or frappe.get_installed_apps(_ensure_on_bench=True):
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2025-03-20 11:52:25,028 ERROR frappe Unable to load translations
+Site: mysite.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 97, in application
+    init_request(request)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 174, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 267, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1429, in setup_module_map
+    apps = get_installed_apps(_ensure_on_bench=True)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 246, in hget
+    value = generator()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 189, in get_translations_from_apps
+    for app in apps or frappe.get_installed_apps(_ensure_on_bench=True):
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2025-03-20 11:52:25,066 ERROR frappe Unable to load translations
+Site: mysite.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 97, in application
+    init_request(request)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 174, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 267, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1429, in setup_module_map
+    apps = get_installed_apps(_ensure_on_bench=True)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f217e5cce50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 246, in hget
+    value = generator()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 189, in get_translations_from_apps
+    for app in apps or frappe.get_installed_apps(_ensure_on_bench=True):
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+2025-03-20 11:53:33,111 ERROR frappe Unable to load translations
+Site: mysite.com
+Form Dict: {}
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f515e380e50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 97, in application
+    init_request(request)
+    ~~~~~~~~~~~~^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/app.py", line 174, in init_request
+    frappe.init(site, sites_path=_sites_path, force=True)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 267, in init
+    setup_module_map(include_all_apps=not (frappe.request or frappe.job or frappe.flags.in_migrate))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1429, in setup_module_map
+    apps = get_installed_apps(_ensure_on_bench=True)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 65, in wrapper
+    return _cache[func][args_key]
+           ~~~~~~~~~~~~^^^^^^^^^^
+KeyError: ((), <object object at 0x7f515e380e50>, frozenset({('_ensure_on_bench', True)}))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 649, in connect
+    sock = socket.create_connection(
+        (self.host, self.port), self.connect_timeout, **kwargs
+    )
+  File "/usr/lib/python3.13/socket.py", line 864, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.13/socket.py", line 849, in create_connection
+    sock.connect(sa)
+    ~~~~~~~~~~~~^^^^
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 174, in get_all_translations
+    return frappe.cache.hget(MERGED_TRANSLATION_KEY, lang, generator=_merge_translations)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/redis_wrapper.py", line 246, in hget
+    value = generator()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 162, in _merge_translations
+    all_translations.update(get_translations_from_apps(lang))
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/translate.py", line 189, in get_translations_from_apps
+    for app in apps or frappe.get_installed_apps(_ensure_on_bench=True):
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/utils/caching.py", line 71, in wrapper
+    return_val = func(*args, **kwargs)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/__init__.py", line 1309, in get_installed_apps
+    installed = json.loads(db.get_global("installed_apps") or "[]")
+                           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1110, in get_global
+    return self.get_default(key, user)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1114, in get_default
+    d = self.get_defaults(key, parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 1130, in get_defaults
+    defaults = frappe.defaults.get_defaults_for(parent)
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/defaults.py", line 249, in get_defaults_for
+    .run(as_dict=True)
+     ~~~^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/query_builder/utils.py", line 79, in execute_query
+    result = frappe.db.sql(query, params, *args, **kwargs)  # nosemgrep
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 232, in sql
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/database.py", line 131, in connect
+    self._conn: MySQLdbConnection | MariadbConnection | PostgresConnection = self.get_connection()
+                                                                             ~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 105, in get_connection
+    conn = self._get_connection()
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 111, in _get_connection
+    return self.create_connection()
+           ~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/apps/frappe/frappe/database/mariadb/database.py", line 114, in create_connection
+    return pymysql.connect(**self.get_connection_settings())
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 361, in __init__
+    self.connect()
+    ~~~~~~~~~~~~^^
+  File "/home/mmduncan/frappe-bench/env/lib/python3.13/site-packages/pymysql/connections.py", line 716, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on '127.0.0.1' ([Errno 111] Connection refused)")
